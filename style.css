@@ -1,0 +1,235 @@
+/* Type for reading, not for looking at.
+ *
+ * These four pages are the only part of Ölçü a regulator, a store reviewer or a suspicious
+ * user will read end to end, and all three are looking for something specific. So the design
+ * does one job: make a long document navigable and make every sentence easy to quote. No hero,
+ * no colour accents doing decorative work, one measure, generous leading, and headings that
+ * carry their own numbering so a clause can be cited by name.
+ */
+
+:root {
+  --ink: #1a1a1a;
+  --ink-soft: #55555f;
+  --ink-faint: #85858f;
+  --ground: #fbfaf7;
+  --rule: #e2e0d8;
+  --mark: #2f6f4f; /* Used only for links and the active nav item. */
+  --flag-ground: #fdf6e6;
+  --flag-rule: #e6cf95;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 400 17px/1.65 ui-serif, Georgia, 'Times New Roman', serif;
+}
+
+.wrap {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem;
+}
+
+/* Masthead ------------------------------------------------------------------ */
+
+.mast {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.mast a.home {
+  font: 600 13px/1 ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  text-decoration: none;
+}
+
+.mast a.home:hover {
+  color: var(--mark);
+}
+
+h1 {
+  font-size: 1.9rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 0.6rem 0 0.4rem;
+  letter-spacing: -0.01em;
+}
+
+.dates {
+  font: 400 13px/1.5 ui-sans-serif, system-ui, sans-serif;
+  color: var(--ink-faint);
+  margin: 0;
+}
+
+.lede {
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  margin: 1.5rem 0 0;
+}
+
+/* Body --------------------------------------------------------------------- */
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 3rem 0 0.75rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--rule);
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.75rem 0 0.5rem;
+}
+
+p,
+li {
+  margin: 0 0 0.9rem;
+}
+
+ul,
+ol {
+  padding-left: 1.4rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--mark);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* A term being defined, not a term being emphasised. */
+dfn {
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Tables ------------------------------------------------------------------- */
+
+.tablewrap {
+  overflow-x: auto;
+  margin: 1.25rem 0 1.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 30rem;
+  font: 400 15px/1.5 ui-sans-serif, system-ui, sans-serif;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.6rem 0.75rem 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+th {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  border-bottom-color: var(--ink);
+}
+
+/* A blank a human must fill in before publishing. Deliberately loud. */
+.fill {
+  background: var(--flag-ground);
+  border: 1px solid var(--flag-rule);
+  border-radius: 3px;
+  padding: 0.05em 0.3em;
+  font: 600 0.9em/1 ui-sans-serif, system-ui, sans-serif;
+  white-space: nowrap;
+}
+
+/* Contact block, and any short block of facts that should not read as prose. */
+.facts {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.5rem;
+  font: 400 15px/1.7 ui-sans-serif, system-ui, sans-serif;
+}
+
+.facts li {
+  margin: 0;
+}
+
+.facts .k {
+  color: var(--ink-faint);
+  display: inline-block;
+  min-width: 7.5rem;
+}
+
+/* Index page cards --------------------------------------------------------- */
+
+.docs {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+
+.docs li {
+  border-top: 1px solid var(--rule);
+  margin: 0;
+}
+
+.docs a {
+  display: block;
+  padding: 1.25rem 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.docs a:hover .t {
+  color: var(--mark);
+}
+
+.docs .t {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.docs .d {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  font: 400 14px/1.6 ui-sans-serif, system-ui, sans-serif;
+  color: var(--ink-faint);
+}
+
+footer a {
+  color: var(--ink-soft);
+}
