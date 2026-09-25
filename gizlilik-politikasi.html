@@ -12,7 +12,7 @@
 <header class="mast">
   <a class="home" href="index.html">Ölçü · Hukuki Belgeler</a>
   <h1>Gizlilik Politikası</h1>
-  <p class="dates">Yürürlük tarihi: 3 Eylül 2026 · Sürüm 2026-09-03</p>
+  <p class="dates">Yürürlük tarihi: 25 Eylül 2026 · Sürüm 2026-09-25</p>
   <p class="lede">
     Ölçü, kilonuzu, ne yediğinizi ve nasıl hissettiğinizi kaydeden bir uygulamadır. Bunlar
     sağlık verisidir ve öyle davranıyoruz. Bu sayfa, tuttuğumuz her şeyi ve nereye gittiğini
@@ -25,8 +25,10 @@
 
 <ul>
   <li><strong>Verinizi satmıyoruz.</strong> Hiç kimseye, hiçbir koşulda.</li>
-  <li><strong>Sağlık veriniz ölçümleme sistemlerine gitmiyor.</strong> Uygulamanın hiçbir
-    analitik ya da hata izleme sağlayıcısı yok — ikisi de kaldırıldı.</li>
+  <li><strong>Sağlık veriniz ölçümleme sistemlerine gitmiyor.</strong> Uygulamanın dışarıdan
+    bir analitik ya da hata izleme sağlayıcısı yok. Hangi ekranların kullanıldığını kendi
+    veri tabanımızda sayıyoruz — kilonuz, kalorileriniz ya da ne yediğiniz bu sayıma hiç
+    girmiyor ve isterseniz kapatabiliyorsunuz.</li>
   <li><strong>Yapay zekâ sağlayıcısına kimliğiniz gitmiyor.</strong> Ne adınız, ne
     e-postanız, ne hesap numaranız.</li>
   <li><strong>Yemek fotoğraflarınızın içindeki konum bilgisi siliniyor</strong> — sunucuya
@@ -96,10 +98,11 @@
 <h2>Neden topluyoruz</h2>
 
 <p>
-  Yalnızca uygulamanın size vaat ettiği işi yapabilmek için: hedefinizi hesaplamak,
-  kaydettiklerinizi göstermek, kullandığınız özellikleri çalıştırmak ve aboneliğinizi
-  yönetmek. Bunun dışında bir amaç yok — profilinizi çıkarmıyor, size reklam hedeflemiyor,
-  kimseye satmıyoruz.
+  Uygulamanın size vaat ettiği işi yapabilmek için: hedefinizi hesaplamak, kaydettiklerinizi
+  göstermek, kullandığınız özellikleri çalıştırmak ve aboneliğinizi yönetmek. Bir de
+  uygulamayı iyileştirebilmek için hangi ekranların kullanıldığını sayıyoruz (aşağıda,
+  "Kullanım istatistikleri"). Bunun dışında bir amaç yok — profilinizi çıkarmıyor, size
+  reklam hedeflemiyor, kimseye satmıyoruz.
 </p>
 
 <h2>Kimlerle paylaşıyoruz</h2>
@@ -153,19 +156,33 @@
   <a href="aydinlatma-metni.html">Aydınlatma Metni'nin 6. bölümüne</a> bakın.
 </p>
 
-<h2>Ölçümleme ve hata takibi</h2>
+<h2>Kullanım istatistikleri</h2>
 
 <p>
-  Yok. Uygulamada daha önce iki tane vardı — biri kullanım ölçümü, biri hata izleme — ve
-  ikisi de kaldırıldı. Gerekçe basitti: yurt dışına yapılan her aktarımın kendi hukuki
-  dayanağını taşıması gerekiyor ve bir kullanım sayacı bunu hak etmiyordu. Sağlayıcı gitti,
-  evrak işi kalmadı.
+  Uygulamanın 1.0.3 sürümünden itibaren, hangi adımların kullanıldığını sayıyoruz: uygulamanın
+  açılması, kurulumun bitirilmesi, bir öğün eklenmesi, ödeme ekranının görülmesi, bir
+  aboneliğin başlaması gibi. Amacı, insanların nerede takıldığını görüp uygulamayı
+  düzeltebilmek.
 </p>
 
+<p>Bu kayıtların sınırları kesindir:</p>
+
+<ul>
+  <li><strong>Değer taşımaz.</strong> "Bir öğün eklendi" kaydedilir; ne yediğiniz, kaç kalori
+    olduğu, kilonuz, ruh hâliniz kaydedilmez. Neyin kaydedilebileceğini sayan kapalı bir liste
+    var ve sunucu, uygulamadan gelen her kaydı bu listeye göre bir kez daha süzer.</li>
+  <li><strong>Üçüncü bir tarafa gitmez.</strong> Hesabınızın zaten tutulduğu kendi veri
+    tabanımızda (Supabase) saklanır. Hiçbir analitik şirketine gönderilmez.</li>
+  <li><strong>Sizinle birlikte gider.</strong> Hesabınızı sildiğinizde bu kayıtlar da silinir;
+    verilerinizi indirdiğinizde bunlar da dökümde yer alır.</li>
+  <li><strong>Kapatabilirsiniz.</strong> <strong>Profil → Veri ve Gizlilik → Kullanım
+    istatistiklerini paylaş</strong> anahtarını kapattığınız andan itibaren hiçbir kayıt
+    gönderilmez.</li>
+</ul>
+
 <p>
-  Bunun pratik sonucu: hangi ekranı kullandığınızı, uygulamanın sizde çöktüğünü ya da bir
-  özelliği kaç kişinin denediğini bilmiyoruz. Bir hatayla karşılaşırsanız bize yazmanız
-  gerekir; kendiliğinden öğrenemiyoruz.
+  Hata izleme ise yok: uygulamanın sizde çöktüğünü kendiliğinden öğrenemiyoruz. Bir hatayla
+  karşılaşırsanız bize yazmanız gerekir.
 </p>
 
 <h2>Çocuklar</h2>
@@ -218,6 +235,39 @@
   <li><span class="k">E-posta</span> <span class="fill">ataakkoyun68@gmail.com</span></li>
 </ul>
 
+<h2>Avrupa Birliği'nde yaşıyorsanız (GDPR)</h2>
+
+<p>
+  Ölçü, Avrupa Birliği'ndeki mağazalarda da yayındadır ve AB'de yaşayan kullanıcılar için
+  Genel Veri Koruma Tüzüğü (GDPR) de uygulanır. Aşağıdakiler bu sayfanın geri kalanına
+  eklenir, onun yerine geçmez:
+</p>
+
+<ul>
+  <li><strong>Veri sorumlusu</strong> aşağıda "Bize ulaşın" bölümünde yazılı kişidir.</li>
+  <li><strong>Hukuki dayanaklar:</strong> sağlık verileriniz için açık rızanız (GDPR m.9/2-a);
+    hesabınız ve aboneliğiniz için sözleşmenin ifası (m.6/1-b); kullanım istatistikleri için
+    meşru menfaatimiz (m.6/1-f) — uygulamanın nerede zorlandığını görebilmek. Bu sonuncusuna
+    itiraz etmek için yukarıdaki anahtarı kapatmanız yeterlidir.</li>
+  <li><strong>Verilerinizin bulunduğu yer:</strong> veri tabanımız Supabase'in Frankfurt
+    (Almanya) bölgesindedir. Yapay zekâ özellikleri kullanıldığında ilgili içerik OpenAI'ye
+    (ABD) gider; bu aktarım OpenAI ile imzalanmış veri işleme sözleşmesine ve Avrupa
+    Komisyonu'nun standart sözleşme hükümlerine dayanır.</li>
+  <li><strong>Haklarınız:</strong> erişim, düzeltme, silme, işlemenin kısıtlanması, veri
+    taşınabilirliği ve itiraz. Silme ve taşınabilirlik uygulama içinden anında
+    kullanılabilir; diğerleri için bize e-posta ile yazabilirsiniz. Verdiğiniz rızayı
+    istediğiniz zaman geri alabilirsiniz; geri almak, önceki işlemenin hukuka uygunluğunu
+    etkilemez.</li>
+  <li><strong>Şikâyet:</strong> yaşadığınız ülkedeki veri koruma otoritesine şikâyette
+    bulunma hakkınız vardır.</li>
+  <li>Otomatik karar verme ya da profilleme yapılmaz; yapay zekânın önerileri yalnızca
+    öneridir ve hiçbir sonuç doğurmaz.</li>
+</ul>
+
+<p>
+  Bu sayfanın İngilizcesi: <a href="privacy-policy.html">Privacy Policy (English)</a>.
+</p>
+
 <h2>Değişiklikler</h2>
 
 <p>
@@ -225,11 +275,18 @@
   kapsamını etkiliyorsa, uygulama onay ekranını size yeniden gösterir.
 </p>
 
+<p>
+  <strong>25 Eylül 2026:</strong> kullanım istatistikleri bölümü ve Avrupa Birliği bölümü
+  eklendi. Sağlık verisi ve yurt dışı aktarım onaylarınızın kapsamı değişmedi — istatistikler
+  sağlık verisi içermiyor ve zaten onayladığınız veri tabanında tutuluyor — bu yüzden onay
+  ekranı yeniden gösterilmiyor.
+</p>
+
 <footer>
   Ölçü · <a href="index.html">Hukuki belgeler</a> ·
   <a href="aydinlatma-metni.html">Aydınlatma Metni</a> ·
   <a href="kullanim-kosullari.html">Kullanım Koşulları</a><br>
-  Sürüm 2026-09-03
+  Sürüm 2026-09-25
 </footer>
 
 </div>
